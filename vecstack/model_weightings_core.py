@@ -45,7 +45,7 @@ def evaluate_ensemble(members, weights, testy):
 	# make prediction
 	yhat = ensemble_predictions(members, weights)
 	# calculate accuracy
-	return mean_squared_error(testy, yhat)
+	return mean_squared_error(testy, yhat, squared=False)
  
 # normalize a vector to have unit norm
 def normalize(weights):
